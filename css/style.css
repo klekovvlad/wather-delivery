@@ -160,6 +160,41 @@ input[name=phone] {
   margin-bottom: 15px;
 }
 
+.homepage {
+  position: relative;
+}
+
+.homepage img.main {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.homepage img.main-topleft {
+  top: 0;
+  left: 0;
+}
+
+.homepage img.main-topright {
+  top: 0;
+  right: 0;
+}
+
+.homepage img.main-left {
+  left: 0;
+  bottom: 410px;
+}
+
+.homepage img.main-right {
+  right: 0;
+  bottom: 560px;
+}
+
+.homepage img.main-topleft,
+.homepage img.main-topright {
+  max-width: calc((100vw - 1200px + 100px) / 2);
+}
+
 .no-webp .header{
   background: url("../img/main-bg.png") no-repeat center bottom; }
 
@@ -307,7 +342,7 @@ input[name=phone] {
 .header .calculator-price .bottles .bottle {
   width: 30px;
   height: 54px;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
@@ -809,6 +844,41 @@ input[name=phone] {
     max-width: 768px;
   }
 
+  .homepage {
+    position: relative;
+  }
+
+  .homepage img.main {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .homepage img.main-topleft {
+    top: 0;
+    left: 0;
+  }
+
+  .homepage img.main-topright {
+    top: 0;
+    right: 0;
+  }
+
+  .homepage img.main-left {
+    left: 0;
+    bottom: 410px;
+  }
+
+  .homepage img.main-right {
+    right: 0;
+    bottom: 560px;
+  }
+
+  .homepage img.main-topleft,
+  .homepage img.main-topright {
+    max-width: calc((100vw - 768px + 100px) / 2);
+  }
+
   .header {
     position: relative;
   }
@@ -871,6 +941,30 @@ input[name=phone] {
   .button-color {
     font-size: 14px;
     padding: 30px 60px;
+  }
+
+  .homepage img.main-topleft {
+    top: 0;
+    left: 0;
+  }
+
+  .homepage img.main-left {
+    left: 0;
+    bottom: 5%;
+  }
+
+  .homepage img.main-right {
+    right: 0;
+    bottom: 30%;
+  }
+
+  .homepage img.main-topleft {
+    max-width: 35vw;
+  }
+
+  .homepage img.main-topright {
+    right: -10vw;
+    max-width: 40vw;
   }
 
   .no-webp .header{
@@ -1051,6 +1145,7 @@ input[name=phone] {
 
   .tariff {
     padding: 0px 0px 80px 0px;
+    overflow: hidden;
   }
 
   .tariff-wrapper {
