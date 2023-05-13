@@ -342,7 +342,7 @@ input[name=phone] {
 .header .calculator-price .bottles .bottle {
   width: 30px;
   height: 54px;
-  background-size: cover;
+  background-size: cover !important;
   position: relative;
 }
 
