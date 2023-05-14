@@ -943,6 +943,10 @@ input[name=phone] {
     padding: 30px 60px;
   }
 
+  .homepage {
+    overflow-x: hidden;
+  }
+
   .homepage img.main-topleft {
     top: 0;
     left: 0;
