@@ -394,6 +394,13 @@ input[name=adress] {
   font-family: MuseoSansCyrl;
   font-weight: 600;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header .calculator-input .input-title img {
+  max-width: 24px;
 }
 
 .header .calculator-input .range-wrapper {
