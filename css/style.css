@@ -338,27 +338,46 @@ input[name=adress] {
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 4px;
+  gap: 20px;
 }
 
-.header .calculator-price .price {
-  font-size: 18px;
-  line-height: 1.2;
+.header .calculator-price .price-wrapper input[type=radio] {
+  display: none;
 }
 
-.header .calculator-price .bottles {
-  display: flex;
-  align-items: center;
-}
-
-.no-webp .header .calculator-price .bottles .bottle{
-  background: url("../img/bottle-icon.png") no-repeat center; }
-
-.header .calculator-price .bottles .bottle {
-  width: 30px;
-  height: 54px;
-  background-size: cover !important;
+.header .calculator-price .price-wrapper label {
+  cursor: pointer;
+  padding-left: 30px;
   position: relative;
+  font-size: 18px;
+}
+
+.header .calculator-price .price-wrapper label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #9CCA2B;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header .calculator-price .price-wrapper input[type=radio]:checked ~ label::before {
+  background: #9CCA2B;
+}
+
+.header .calculator-price .price-wrapper input[type=radio]:checked ~ label::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 5px solid #fff;
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
 }
 
 .header .calculator-input {
@@ -1085,12 +1104,8 @@ input[name=adress] {
   }
 
   .header .calculator-price {
-    gap: 4px;
-  }
-
-  .header .calculator-price .bottles .bottle {
-    width: 16px;
-    height: 24px;
+    flex-direction: column;
+    align-items: start;
   }
 
   .header .calculator-input {
@@ -1268,8 +1283,6 @@ input[name=adress] {
 }
 
 .webp .header{ background: url(../img/main-bg.webp) no-repeat center bottom; }
-
-.webp .header .calculator-price .bottles .bottle{ background: url(../img/bottle-icon.webp) no-repeat center; }
 
 @media (max-width: 767px){
 
