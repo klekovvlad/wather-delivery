@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Доставка воды</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230514121056">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230515154838">
 </head>
 <body>
     
@@ -80,6 +80,7 @@
                                 </div>
                                 <button class="button popup-open button-calc">Далее</button>
                             </div>
+
                         </div>
                     </div>
                     
@@ -146,8 +147,12 @@
                             <form action="send.php" method="post" data-mail="klekov23@yandex.ru">
                                 <input type="text" name="name" class="input-item" maxlength="20" placeholder="Введите имя" required>
                                 <input type="tel" name="phone" class="input-item" placeholder="Введите телефон" required>
+                                <input type="text" name="adress" class="input-item" placeholder="Адрес доставки" required>
                                 <button type="button" class="button button-color">Оставить заявку</button>
                             </form>
+                            
+                            <div class="form-desc">Цена залоговой тары при первом заказе 450р шт.</div>
+                            <div class="form-desc">В выходные прием заказов до 13:00</div>
                         </div>
                     </div>
                 </div>
@@ -170,11 +175,15 @@
             <form action="send.php" method="post" data-mail="klekov23@yandex.ru">
                 <input type="text" name="name" class="input-item" maxlength="20" placeholder="Введите имя" required>
                 <input type="tel" name="phone" class="input-item" placeholder="Введите телефон" required>
+                <input type="text" name="adress" class="input-item" placeholder="Адрес доставки" required>
                 <button type="button" class="button button-color">Оставить заявку</button>
             </form>
+            
+            <div class="form-desc">Цена залоговой тары при первом заказе 450р шт.</div>
+            <div class="form-desc">В выходные прием заказов до 13:00</div>
         </div>
     </div>
 
-    <script src="js/app.min.js?_v=20230514121056"></script>
+    <script src="js/app.min.js?_v=20230515154838"></script>
 </body>
 </html>

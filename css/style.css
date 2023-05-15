@@ -156,11 +156,12 @@ input[type=range]::-ms-track {
   position: relative;
 }
 
-input[name=name] {
+input[name=name],
+input[name=phone] {
   margin-bottom: 10px;
 }
 
-input[name=phone] {
+input[name=adress] {
   margin-bottom: 15px;
 }
 
@@ -197,6 +198,16 @@ input[name=phone] {
 .homepage img.main-topleft,
 .homepage img.main-topright {
   max-width: calc((100vw - 1200px + 100px) / 2);
+}
+
+.form-desc {
+  font-size: 18px;
+  color: #2E72BB;
+  margin-top: 30px;
+}
+
+.form-desc:last-child {
+  margin-top: 10px;
 }
 
 .no-webp .header{
@@ -440,6 +451,13 @@ input[name=phone] {
   align-items: center;
   justify-content: space-between;
   gap: 13px;
+  margin-bottom: 20px;
+}
+
+.header .calculator-desc {
+  font-size: 16px;
+  color: #9CCA2B;
+  margin-top: 10px;
 }
 
 .header .calculator-result {
